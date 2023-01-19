@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Esron Tech</title>
+    <link rel="stylesheet" href="esron.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="esronweb.html"><img src="E:\firstwebproject\photos\logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">CONTACT</a></li>
+              </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    <div class="text-box">
+        <h1>Making your Technology Experience Easy and Affordable</h1>
+        <p>Esron is a leading service provider in computer technology, offering an array of services <br> at affordable prices</p>
+        <a href="" class="hero-btn">Visit us to know More</a>
+    </div>
+
+
+
+</section>
+
+<!-------JAVASCRIPT CODE TO SHOW MENU AND HIDE MENU------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+  </body>
+</html>
